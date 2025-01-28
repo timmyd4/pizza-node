@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+    <link rel="icon" type="image/png" href="pizza.jpg">
+    <!-- favicon -->
+    <link rel="stylesheet" href="Styles/pizza-Styles.css">
+</head>
+<body>
+    <div id="main">
+        <header>
+            <h1> Pizza </h1>
+            <p>The Best pizza ever!</p>
+            <img src="images/PizzaGuy.jpg" alt="Pizza guy">
+            <!-- pizza guy image-->
+            <hr>
+            <a id="contact-button" href="#" role="button"> Contact Us</a>
+        </header>
+
+        <!--form here-->
+        <form action="thankyou" method="get">
+
+            <!--Contact Info-->
+            <fieldset>
+
+                <legend> Contact Info </legend>
+                <label> First Name: 
+                    <input type="text" name="fname">
+                </label>
+
+                <label> Last Name: 
+                    <input type="text" name="lname">
+                </label>
+
+                <label> Email: 
+                    <input type="text" name="Email">
+                </label>
+
+            </fieldset>
+
+            <!-- Pickup or delivery-->
+             <fieldset>
+                <legend> Select Pickup or Delivery</legend>
+                <label>
+                    <input type="radio" name="method" value="pickup"> Pickup
+                </label>
+
+                <label>
+                    <input type="radio" name="method" value="delivery"> Delivery
+                </label>
+             </fieldset>
+
+
+             <!-- Toppings -->
+              <fieldset>
+                <legend> Select Toppings </legend>
+                <label> 
+                    <input type="checkbox" name="toppings" value="Sasuage"> Sasuage
+                </label>
+
+                <label> 
+                    <input type="checkbox" name="toppings" value="Pepporoni"> Pepporoni
+                </label>
+
+                <label> 
+                    <input type="checkbox" name="toppings" value="Cheese"> Cheese
+                </label>
+              </fieldset>
+
+
+              <!-- Size of pizza-->
+              <fieldset>
+                <legend> Pizza Size </legend>
+                <select name="Size" id="Size"> 
+                    <option value="none">-- Select a Size --</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+              </fieldset>
+
+            <!--place order button-->
+            <button type="submit" > Place Order </button>
+        </form>
+    </div>
+</body>
+</html>
+
+<!---->
